@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+
 intents = discord.Intents.default()
 intents.messages = True
 intents.reactions = True
