@@ -13,7 +13,7 @@ VOTING_CHANNEL_ID = 422297340356067329  # Channel for voting/counting/winner ann
 WELCOME_CHANNEL_ID = 672927574904668187  # Channel for welcome messages (change this!)
 REPORT_TIME = time(12, 0)  # 12:00 PM
 TARGET_EMOJI = "⬆️"
-WELCOME_MESSAGE = "Welcome to the server, {mention}! 🎉"
+WELCOME_MESSAGE = "Welcome to the server, {mention}! 🎉 Please read the server rules:)"
 
 intents = discord.Intents.default()
 intents.message_content = True
