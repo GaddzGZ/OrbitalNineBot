@@ -52,10 +52,6 @@ async def on_ready():
 @bot.event
 async def on_member_join(member):
     welcome_channel = bot.get_channel(WELCOME_CHANNEL_ID)
-    if not welcome_channel:
-        # Fallback to system channel or general
-        welcome_channel = member.guild.system_channel or discord.utils.get(member.guild.text_channels, name='general')
-    
     if welcome_channel:
         await welcome_channel.send(WELCOME_MESSAGE.format(mention=member.mention))
 
